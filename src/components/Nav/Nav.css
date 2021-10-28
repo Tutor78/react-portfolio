@@ -1,0 +1,50 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-button {
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.nav-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    visibility: hidden;
+    flex-direction: column;
+}
+
+.dropdown-item {
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+.dropdown-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.show {
+    visibility: visible;
+}
+
+@media screen and (max-width: 415px) {
+    .nav-button {
+        font-size: 1rem;
+    }
+
+    .dropdown-item {
+        font-size: 1rem;
+    }
+}

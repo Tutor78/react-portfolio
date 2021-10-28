@@ -1,3 +1,5 @@
+import React from 'react';
+import Nav from './components/Nav';
 
 import './App.css';
 
@@ -5,6 +7,7 @@ import './App.css';
 function App() {
   return (
     <div className='container'>
+      <Nav></Nav>
     </div>
   );
 }
