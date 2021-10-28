@@ -8,7 +8,7 @@ ul {
 .nav-button {
     background-color: transparent;
     border-color: transparent;
-    color: white;
+    color: #B9C3D4;
     font-size: 1.5rem;
     margin: 5px;
 }
@@ -28,7 +28,7 @@ ul {
 }
 
 .dropdown-item {
-    color: white;
+    color: #B9C3D4;
     text-align: center;
     font-size: 1.25rem;
     overflow: hidden;
@@ -48,7 +48,7 @@ ul {
 
 @media screen and (max-width: 415px) {
     .nav-button {
-        font-size: 1rem;
+        font-size: 1.15rem;
     }
 
     .dropdown-item {
