@@ -2,6 +2,7 @@ ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .nav-button {
@@ -17,9 +18,13 @@ ul {
     cursor: pointer;
 }
 
+.dropdown {
+    display: inline-block;
+}
+
 .dropdown-menu {
-    visibility: hidden;
-    flex-direction: column;
+    display: none;
+    position: absolute;
 }
 
 .dropdown-item {
@@ -28,6 +33,8 @@ ul {
     font-size: 1.25rem;
     overflow: hidden;
     margin: 5px 0;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .dropdown-item:hover {
@@ -36,7 +43,7 @@ ul {
 }
 
 .show {
-    visibility: visible;
+    display: grid;
 }
 
 @media screen and (max-width: 415px) {
