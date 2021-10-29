@@ -19,12 +19,15 @@ ul {
 }
 
 .dropdown {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 .dropdown-menu {
     display: none;
     position: absolute;
+    margin-top: 35px;
+    margin-right: 10px;
 }
 
 .dropdown-item {
@@ -32,9 +35,10 @@ ul {
     text-align: center;
     font-size: 1.25rem;
     overflow: hidden;
-    margin: 5px 0;
+    margin: 5px;
     background-color: transparent;
     border-color: transparent;
+    text-shadow: 0px 0px 3px black;
 }
 
 .dropdown-item:hover {
@@ -43,7 +47,7 @@ ul {
 }
 
 .show {
-    display: grid;
+    display: flex;
 }
 
 @media screen and (max-width: 415px) {
@@ -51,7 +55,14 @@ ul {
         font-size: 1.15rem;
     }
 
+    .show {
+        left: 0;
+        right: 0;
+        justify-content: center;
+    }
+
     .dropdown-item {
         font-size: 1rem;
     }
 }
+

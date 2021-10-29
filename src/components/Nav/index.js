@@ -38,7 +38,13 @@ function Nav() {
                     <button className='nav-button'>About Me</button>
                 </li>
                 <li className='dropdown' onMouseLeave={() => hideDropdown()}>
-                    <button className='nav-button' onMouseEnter={() => showDropdown()} onClick={() => toggleDropdown()}>Portfolio</button>
+                    <button 
+                        className='nav-button' 
+                        onMouseEnter={() => showDropdown()} 
+                        onClick={() => toggleDropdown()}
+                    >
+                        Portfolio
+                    </button>
                     <div className='dropdown-menu'>
                         <button className='dropdown-item'>Bootcamp</button>
                         <button className='dropdown-item'>Challenges</button>

@@ -1,7 +1,7 @@
 :root {
   --dark: #0A141F;
   --light: #B9C3D4;
-  --light-blue: #659DAE;
+  --light-blue: #659dae;
   --dark-blue: #547B92;
 }
 
@@ -10,4 +10,5 @@
   background-position: center;
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
 }
