@@ -1,0 +1,37 @@
+.contact-title {
+    text-align: center;
+}
+
+#contact-form {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.contact-name,
+.contact-email,
+.contact-message {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    color: #B9C3D4;
+    font-size: 1.5rem;
+    margin: 5px auto;
+}
+
+.contact-name input {
+    width: 40%;
+}
+
+.contact-email input {
+    width: 50%;
+}
+
+.contact-message textarea {
+    width: 75%;
+}
+
+.contact-button {
+    width: 50%;
+    margin: 5px auto;   
+}
