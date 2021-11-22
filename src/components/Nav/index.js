@@ -1,61 +1,42 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './Nav.css';
 
-function Nav() {
-    const [dropdown, setDropdown] = useState('hide');
-
-    function toggleDropdown() {
-        const dropdownMenu = document.querySelector('.dropdown-menu');
-
-        if (dropdown === 'hide') {
-            setDropdown('show');
-            dropdownMenu.classList.add('show');
-        } else {
-            setDropdown('hide');
-            dropdownMenu.classList.remove('show');
+function Nav({ setCurrentPage }) {
+    function setPage(event) {
+        switch (event.target.textContent) {
+            case 'About':
+                setCurrentPage('about');
+                break;
+            case 'Portfolio':
+                setCurrentPage('portfolio');
+                break;
+            case 'Contact':
+                setCurrentPage('contact');
+                break;
+            case 'Resume':
+                setCurrentPage('resume');
+                break;
+            default:
+                setCurrentPage('about');
+                break;
         }
-    }
-
-    function showDropdown() {
-        const dropdownMenu = document.querySelector('.dropdown-menu');
-
-        setDropdown('show');
-        dropdownMenu.classList.add('show');
-    }
-
-    function hideDropdown() {
-        const dropdownMenu = document.querySelector('.dropdown-menu');
-
-        setDropdown('hide');
-        dropdownMenu.classList.remove('show');
     }
 
     return (
         <nav>
             <ul>
                 <li>
-                    <button className='nav-button'>About Me</button>
-                </li>
-                <li className='dropdown' onMouseLeave={() => hideDropdown()}>
-                    <button 
-                        className='nav-button' 
-                        onMouseEnter={() => showDropdown()} 
-                        onClick={() => toggleDropdown()}
-                    >
-                        Portfolio
-                    </button>
-                    <div className='dropdown-menu'>
-                        <button className='dropdown-item'>Bootcamp</button>
-                        <button className='dropdown-item'>Challenges</button>
-                        <button className='dropdown-item'>Personal</button>
-                    </div>
+                    <button className='nav-button' onClick={setPage}>About Me</button>
                 </li>
                 <li>
-                    <button className='nav-button'>Contact</button>
+                    <button className='nav-button' onClick={setPage}>Portfolio</button>
                 </li>
                 <li>
-                    <button className='nav-button'>Resume</button>
+                    <button className='nav-button' onClick={setPage}>Contact</button>
+                </li>
+                <li>
+                    <button className='nav-button' onClick={setPage}>Resume</button>
                 </li>
             </ul>
         </nav>

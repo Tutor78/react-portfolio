@@ -6,7 +6,7 @@ import profilePicture from './profile-pic.jpg';
 
 function About() {
     return (
-        <div className='about-container'>
+        <div className='component-container'>
             <h1 className='about-title'>Who Am I?</h1>
             <div className='about-info'>
                 <img className='about-image' src={profilePicture} alt='Mike' />

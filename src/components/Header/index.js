@@ -4,11 +4,11 @@ import Nav from '../Nav';
 
 import './Header.css';
 
-function Header() {
+function Header({ setCurrentPage }) {
     return (
         <div className='header'>
             <h1>Mike Tutor</h1>
-            <Nav />
+            <Nav setCurrentPage={setCurrentPage} />
         </div>
     )
 }
